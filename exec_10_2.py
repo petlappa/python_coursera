@@ -11,19 +11,19 @@ hours = dict()
 
 for line in handle :
     if 'From' in line :
-        list = line.split()
-        if list[0] == 'From' :
+        lista = line.split()
+        if lista[0] == 'From' :
             #get time xx:yy:zz
-            hline = list[5]
+            hline = lista[5]
             #split time with :
             line2 = hline.split(':')
             #store hour
             hours[line2[0]] = hours.get(line2[0],0) + 1
-#print hours in order
+
 #list func from dictionary returns tuples
 #that can be then sorted
-print(hours)
-list(hours)
 t = list(hours.items())
 t.sort()
-print(t)
+#print hours in order each value key in own row
+for k, v in t :
+    print(k, v)
