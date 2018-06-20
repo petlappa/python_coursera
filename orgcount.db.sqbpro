@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/plappalainen/orgcount.db" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="321"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="Counts"/><default_encoding codec=""/><browsetable_info data="AAAAAwAAAAoAVQBzAGUAcgBzAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////8AAAAA/////wAAAAwAQwBvAHUAbgB0AHMAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////wAAAAD/////AAAACABBAGcAZQBzAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////8AAAAA/////w=="/></tab_browse><tab_sql><sql name="SQL 1">select count(*) from Users</sql><sql name="SQL 1">DELETE FROM Ages;
+INSERT INTO Ages (name, age) VALUES ('Kyden', 31);
+INSERT INTO Ages (name, age) VALUES ('Luisa', 23);
+INSERT INTO Ages (name, age) VALUES ('Sona', 31);
+INSERT INTO Ages (name, age) VALUES ('Milana', 13);
+INSERT INTO Ages (name, age) VALUES ('Zanab', 35);
+INSERT INTO Ages (name, age) VALUES ('Bethan', 37);</sql><sql name="SQL 2">SELECT hex(name || age) AS X FROM Ages ORDER BY X</sql><sql name="SQL 1">CREATE TABLE Counts (org TEXT, count INTEGER)</sql><current_tab id="3"/></tab_sql></sqlb_project>
